@@ -1,0 +1,181 @@
+/* LOVEFORHATE*/
+
+
+
+
+/*general*/
+:root {
+    --main-color: #316cda;
+}
+
+
+body {
+    margin: 0px
+}
+
+h1 {
+    color: --main-color;
+}
+
+h2 {
+    color: #316cda;
+}
+
+hr {
+    height: 10px;
+    border: 0px;
+    background-image: repeating-linear-gradient(to bottom, #918f8f, #ffffff);
+}
+
+
+/* class*/
+
+.headhyperlinks {
+    color: #000000;
+    font-family: marker felt;
+    text-align: left;
+}
+
+
+/* id's*/
+
+#antrag {
+    float: left;
+    margin: 80px 20px 0px 20px;
+
+    height: fit-content;
+    width: fit-content;
+
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#antrag_link {
+    height: 50px;
+    width:  150px;
+
+    border-color:   #316cda;
+    border-width:   5px;
+    border-style:   solid;
+}
+
+#section_willkommen {
+    height: 750px;
+    background-color:   #a08c8c;
+}
+
+#fixed_line {
+    height:  140px;
+    width:  100%;
+
+    background-color: #ffffff;
+}
+
+#fixed_bottomline {
+    height: 30px;
+    width:  100%;
+    background-color:   grey;
+}
+
+#frontline {
+    height: 30px;
+    
+    background-color: #316cda;
+    color: #000000;
+    font-size: 150%;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-align: center;
+
+    padding: 5px 0px 0px 5px;
+    border: 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+#kontakt {
+    float: left;
+    margin: 80px 20px 0px 20px;
+
+    height: fit-content;
+    width: fit-content;
+
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#kontakt_telefonnummer {
+    float:  left;
+    background-color:   #a08c8c;
+    height: fit-content;
+    width:  fit-content;
+}
+
+#logo {
+    float: left;
+    margin: 5px 0px 0px 10px;
+
+    height: 130px;
+    width: 130px;
+
+    background-color: #000000;
+    background: url(ah_logo\ klein.jpg);
+    background-size: contain;
+
+}
+
+#pflegebox_bestellen {
+    height: 50px;
+    width:  150px;
+
+    border-color:   #316cda;
+    border-width:   5px;
+    border-style:   solid;
+}
+
+#pflegehilfsmittel {
+    float: left;
+    margin: 80px 20px 0px 20px;
+
+    height: fit-content;
+    width: fit-content;
+
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#float_kontakt1 {
+    float: left;
+    height: 400px;
+    width: 400px;
+}
+
+#float_kontakt2 {
+    float: left;
+    height: 400px;
+    width:  400px;
+
+    background-color: #316cda;
+}
+
+#willkommen {
+    float: left;
+    margin: 80px 20px 0px 300px;
+
+    height: fit-content;
+    width: fit-content;
+
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+/*links*/
+
+a:link {
+    color:  #535353;
+    text-decoration: none;
+}
+
+a:visited {
+    color:  #535353;
+}
+
+a:hover {
+    color:#316cda;
+}
+
