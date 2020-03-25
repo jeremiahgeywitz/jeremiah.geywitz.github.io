@@ -5,81 +5,41 @@
 
 /*general*/
 :root {
+    /*colors*/
     --main-color: #316cda;
 }
 
-
-body {
-    margin: 0px
-}
-
 h1 {
-    color: --main-color;
+    color: var(--main-color);
 }
 
 h2 {
-    color: #316cda;
+    color: var(--main-color);
 }
 
-hr {
-    height: 10px;
-    border: 0px;
-    background-image: repeating-linear-gradient(to bottom, #918f8f, #ffffff);
-}
+
 
 
 /* class*/
 
-.headhyperlinks {
-    color: #000000;
-    font-family: marker felt;
-    text-align: left;
+.active {
+    color: var(--main-color);
 }
+
 
 
 /* id's*/
 
-#antrag {
-    float: left;
-    margin: 80px 20px 0px 20px;
-
-    height: fit-content;
-    width: fit-content;
-
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-#antrag_link {
-    height: 50px;
-    width:  150px;
-
-    border-color:   #316cda;
-    border-width:   5px;
-    border-style:   solid;
-}
 
 #section_willkommen {
     height: 750px;
     background-color:   #a08c8c;
 }
 
-#fixed_line {
-    height:  140px;
-    width:  100%;
-
-    background-color: #ffffff;
-}
-
-#fixed_bottomline {
-    height: 30px;
-    width:  100%;
-    background-color:   grey;
-}
-
 #frontline {
     height: 30px;
     
-    background-color: #316cda;
+    background-color: var(--main-color);
     color: #000000;
     font-size: 150%;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -90,16 +50,6 @@ hr {
     margin: 0px 0px 0px 0px;
 }
 
-#kontakt {
-    float: left;
-    margin: 80px 20px 0px 20px;
-
-    height: fit-content;
-    width: fit-content;
-
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
 #kontakt_telefonnummer {
     float:  left;
     background-color:   #a08c8c;
@@ -107,37 +57,9 @@ hr {
     width:  fit-content;
 }
 
-#logo {
-    float: left;
-    margin: 5px 0px 0px 10px;
 
-    height: 130px;
-    width: 130px;
 
-    background-color: #000000;
-    background: url(ah_logo\ klein.jpg);
-    background-size: contain;
 
-}
-
-#pflegebox_bestellen {
-    height: 50px;
-    width:  150px;
-
-    border-color:   #316cda;
-    border-width:   5px;
-    border-style:   solid;
-}
-
-#pflegehilfsmittel {
-    float: left;
-    margin: 80px 20px 0px 20px;
-
-    height: fit-content;
-    width: fit-content;
-
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
 
 #float_kontakt1 {
     float: left;
@@ -150,32 +72,286 @@ hr {
     height: 400px;
     width:  400px;
 
-    background-color: #316cda;
+    background-color: var(--main-color);
 }
 
-#willkommen {
-    float: left;
-    margin: 80px 20px 0px 300px;
+
+/* NAVIGATION-BAR */
+
+#container_navigation  {
+
+    height: 140px;
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    /*background-color: darkgrey; */
+}
+
+#logo   {
+
+    min-height: 130px;
+    min-width: 130px;
+
+    /* logo size should be fixed now
+    height: 130px;
+    width: 130px;
+
+    logo added in html sheet
+    background: url(ah_logo\ klein.jpg);
+    background-size: contain;
+    */
+}
+
+#name   {
+    
+    height: 130px;
+    width: 130px;
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+    /*background-color: darksalmon;*/
+}
+
+#navigation  {
 
     height: fit-content;
     width: fit-content;
 
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin-top: 50px;
+
+    /*background-color: darkseagreen;*/
 }
 
 
-/*links*/
+
+body    {
+    margin: 0px;
+}
+
+hr {
+    height: 10px;
+    width: 100%;
+
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+
+    background-image: repeating-linear-gradient(to bottom, #918f8f, #ffffff);
+}
+
+ul  {
+    list-style-type: none;
+
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+
+}
+
+li  {
+    float: left;
+
+    padding-right: 30px;
+
+    font-size:  1.25em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+li:last-child   {
+    padding-right: 0px;
+}
 
 a:link {
-    color:  #535353;
+    color:  #6b6b6b;
     text-decoration: none;
 }
 
 a:visited {
-    color:  #535353;
+    color:  #6b6b6b;
 }
 
 a:hover {
-    color:#316cda;
+    color:  #316cda;
 }
 
+/* muss noch richtig implementiert werden
+.active {
+    color: #316cda;
+}
+*/
+
+
+
+/* first top line ftp*/
+
+#container_ftl  {
+    height: 30px;
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #316cda;
+}
+
+#text_ftl   {
+    height: fit-content;
+    width: fit-content;
+
+    font-weight: bold;
+    font-size:  1.25em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+
+
+
+/* last bottom line lbl*/
+
+#container_lbl  {
+    height: fit-content;
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+    height: fit-content;
+    width: 100%;
+
+    background-color: #6b6b6b;
+}
+
+#copyright_lbl  {
+
+    margin: 2px;
+
+    font-size: 1em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+
+/* secondlast bottom line slbl*/
+
+#container_slbl {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+    height: fit-content;
+    width: 100%;
+
+    background-color: #9e9a9a;
+}
+
+#text_slbl  {
+
+    margin: 2px;
+
+    font-size: 1em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: bold;
+
+    color: #000000;
+}
+
+
+
+
+
+/*textpage "Willkommen"*/
+
+#container_text {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    height: fit-content;
+    width: 100%;
+
+    background-color: darksalmon;
+}
+
+#main_text  {
+    height: fit-content;
+    width: fit-content;
+
+    background-color: darkseagreen;
+}
+
+#container_geschaeftspartner    {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-end;
+
+    height: fit-content;
+    width: 100%;
+
+    background-color: darkslateblue;
+}
+
+#container_alltagshelden    {
+
+    text-align: center;
+
+    height: fit-content;
+    width: 300px;
+
+    background-color: #316cda;
+}
+
+#container_immerhelden  {
+
+    text-align: center;
+
+    height: fit-content;
+    width: 300px;
+
+    background-color: #316cda;
+}
+
+#antrag_ausfuellen {
+    height: 50px;
+    width:  150px;
+
+    border-color:   #316cda;
+    border-width:   5px;
+    border-style:   solid;
+}
+
+#sanikorb_bestellen {
+    height: 50px;
+    width:  150px;
+
+    border-color:   #316cda;
+    border-width:   5px;
+    border-style:   solid;
+}
+
+#sanikorb_liefern {
+    height: 50px;
+    width:  150px;
+
+    border-color:   #316cda;
+    border-width:   5px;
+    border-style:   solid;
+}

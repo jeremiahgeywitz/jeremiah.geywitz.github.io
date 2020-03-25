@@ -4,44 +4,59 @@
         <link rel="stylesheet" href="main.css">
         <link rel="icon" href="ah_logo klein.jpg" type="image/jpg" />
         <title>Willkommen</title>
-        <p id="frontline">
-        Wer sind die Pflegehelden? Ruf uns an - 0711/XXXXXX
-        </p>
-        
     </head>
     <body>
         <header>
-            <div id="fixed_line">
-                <div id="logo"></div>
-                
-                    <!--Bild von Hyperlinks trennen um gewünschte Anordnung zu erzielen-->
-                    <!--evtl mit Tabelle-->
-                    <!--<img src="ah_logo klein.jpg" alt="Logo">--> 
-                    <div id="willkommen"><a href="index.html" target="_self">Willkommen</a></div>  
-                    <div id="antrag"><a href="antrag.html" target="_self">Antrag</a></div>
-                    <div id="pflegehilfsmittel"><a href="pflegehilfsmittel.html" target="_self">Pflegehilfsmittel</a></div> 
-                    <div id="kontakt"><a href ="kontakt.html" target="_self">Kontakt</a></div>
-                    <!--links visited shouldn't change their color-->
-               
+            <div id="container_ftl">
+                <div id="text_ftl">Fragen? Ruf uns an <img src="icon-tele.svg"  alt="icon-tele" height="20" width="20"> 0711 - XXXXXX</div>
             </div>
-            <hr><!--line originäler gestalten-->
+            <div id="container_navigation">
+                <div id="logo"><a href="index.html"><img src="ah_logo klein.jpg" alt="ah_logo klein"></a></div>
+                <div id="name"><!--Sanikorb - Hilfsmittel für dein Alltag--></div>
+                <div id="navigation">
+                    <ul>
+                        <li><a href="index.html">Willkommen</a></li>
+                        <li><a href="antrag.html">Antrag</a></li>
+                        <li><a href="pflegehilfsmittel.html">Pflegehilfsmittel</a></li>
+                        <li><a href="index.html">Shop</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
         </header>
         <section>
-            <div id="section_willkommen">
-                <h1> Die Pflegehelden - das Sanitätshaus der Alltagshelden</h1>
-                <!-- Wird evtl später als Bilder hinzugefügt und mit Link hinterlegt-->
-                <p>
-                    <div id="antrag_link">Antrag für Ihre Pflegekasse ausfüllen</div>
-                    <br>
-                    <div id="pflegebox_bestellen">Bestellen Ihrer Pflegebox</div>
-                </p>
+            <div    id="container_text">
+                <div    id="main_text">
+                    <h1> Sanikorb - Pflegemittel für Ihren Alltag</h1>
+                    <h2>Nach §40 des SGB wird auch Ihr Sanikorb von der Pflegekasse übernommen.</h2>
+                        Nur drei Steps entfernt und auch Sie gehen geschützt durch den Alltag.
+                        <!-- Wird evtl später als Bilder hinzugefügt und mit Link hinterlegt-->
+                        <!--perhabs as a list-->
+                    <div    id="antrag_ausfuellen">1) Antrag für Ihre Pflegekasse ausfüllen</div><!--icon:https://stock.adobe.com/de/search?load_type=search&is_recent_search=&search_type=usertyped&k=formular&native_visual_search=&similar_content_id=&asset_id=269520561-->
+                    <div    id="sanikorb_bestellen">2) Bestellen Ihres Sanikorbs</div><!--icon:https://stock.adobe.com/de/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Binclude_stock_enterprise%5D=0&filters%5Bis_editorial%5D=0&filters%5Bcontent_type%3Aimage%5D=1&k=basket&order=relevance&safe_search=1&search_page=1&search_type=usertyped&acp=&aco=basket&get_facets=0&asset_id=296060902-->
+                    <div    id="sanikorb_liefern"> 3) Lieferung zu Ihnen nach Hause<!--icon:https://stock.adobe.com/de/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=delivery&order=relevance&safe_search=1&search_page=1&search_type=usertyped&acp=&aco=delivery&limit=100&get_facets=0&asset_id=227739395--></div>
+                </div>
+            </div>  
+            <div    id="container_geschaeftspartner">
+                <div    id="container_alltagshelden">Benötigen Sie Betreuung zur<br>
+                    Erleichterung Ihres Alltags.<br>
+                    <img    src="ah_logo klein.jpg"  alt="ah_logo klein"> Alltagshelden
+            
+                </div>
+                <div    id="container_immerhelden">Benötigen Sie ein<br>
+                    24-Stunden Pflege.<br>
+                    <img    src="ah_logo klein.jpg" alt="ah_logo klein"> Immerhelden
+                </div>
             </div>
         </section>
         <footer>
-            <div id="fixed_bottomline"><a href="http://www.alltagshelden-24.de" target="_blank">Alltagshelden</a>
-                <a href="http://www.immerhelden.de" target="_blank">Immerhelden</a>
-                <!--Copyright-Zeichen einfügen-->
-                Copyright B. Schiffner & T. Schweiger GbR
+            <!--adjust the two bottom container to equal "|"-->
+            <div    id="container_slbl">
+                <div    id="text_slbl"><a  href="">Impressum</a> | <a   href="">Datenschutz</a></div>
+            </div>
+            <div id="container_lbl">
+                <div id="copyright_lbl"> Copyright &#169 2020 - B. Schiffner & T. Schweiger</div>
             </div>
         </footer>
     </body>
