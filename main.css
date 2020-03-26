@@ -80,6 +80,7 @@ h2 {
 
 #container_navigation  {
 
+
     height: 140px;
     width: 100%;
 
@@ -108,9 +109,15 @@ h2 {
 
 #name   {
     
-    height: 130px;
-    width: 130px;
+    height: fit-content;
+    max-width: 150px;
 
+    color: #316cda;
+    font-size:  1.25em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: bold;
+
+    margin-bottom: 20px;
     margin-left: 5%;
     margin-right: 5%;
 
@@ -145,6 +152,7 @@ hr {
 }
 
 ul  {
+    
     list-style-type: none;
 
     padding: 0px;
@@ -184,6 +192,8 @@ a:hover {
     color: #316cda;
 }
 */
+
+
 
 
 
@@ -285,15 +295,22 @@ a:hover {
 
     height: fit-content;
     width: 100%;
-
-    background-color: darksalmon;
 }
 
 #main_text  {
     height: fit-content;
     width: fit-content;
 
-    background-color: darkseagreen;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #6b6b6b;
+}
+
+#carebasket {
+    height: 270px;
+    width: 420px;
+
+    background: url(carebasket.png);
+    background-size: contain;
 }
 
 #container_geschaeftspartner    {
@@ -306,10 +323,19 @@ a:hover {
     height: fit-content;
     width: 100%;
 
-    background-color: darkslateblue;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+
+    background-color: #316cda;
 }
 
 #container_alltagshelden    {
+
+    border-bottom: #316cda;
+    border-left: #316cda;
+    border-top: #316cda;
+    border-right: #6b6b6b;
+    border-style: solid;
+    border-width: 3px;
 
     text-align: center;
 
@@ -330,28 +356,69 @@ a:hover {
 }
 
 #antrag_ausfuellen {
-    height: 50px;
-    width:  150px;
 
-    border-color:   #316cda;
-    border-width:   5px;
-    border-style:   solid;
+    display: flex;
+    align-items: center;
+
+    height: 50px;
+    width:  250px;
 }
 
 #sanikorb_bestellen {
-    height: 50px;
-    width:  150px;
 
-    border-color:   #316cda;
-    border-width:   5px;
-    border-style:   solid;
+    display: flex;
+    align-items: center;
+
+    height: 50px;
+    width:  250px;
 }
 
 #sanikorb_liefern {
-    height: 50px;
-    width:  150px;
 
-    border-color:   #316cda;
-    border-width:   5px;
-    border-style:   solid;
+    display: flex;
+    align-items: center;
+
+    height: 50px;
+    width:  250px;
+}
+
+#icon_antrag    {
+
+    height: 40px;
+    width: 40px;
+
+    background: url(Antrag_ausfuellen.png);
+    background-size: contain;
+
+}
+
+#icon_sanikorb   {
+
+    height: 40px;
+    width: 40px;
+
+    background: url(bestellung_abschicken.png);
+    background-size: contain;
+
+}
+
+#icon_delivery   {
+
+    height: 35px;
+    width: 55px;
+
+    background: url(lieferung_bekommen.png);
+    background-size: contain;
+}
+
+h1  {
+
+    font-size: 1.5em;
+    color: #316cda;
+}
+
+h2{
+
+    font-size: 1.25em;
+    color: #000000;
 }

@@ -3,29 +3,40 @@
     <head>
         <link rel="stylesheet" href="main.css">
         <title>Antrag</title>
-        <div id="frontline">Fragen zum Antrag? Ruf uns an - 0711/XXXXXX</div>
+        <div id="container_ftl">
+            <div id="text_ftl">Fragen? Ruf uns an <img src="icon-tele.svg"  alt="icon-tele" height="20" width="20"> 0711 - XXXXXX</div>
+        </div>
     </head>
     <body>
         <header>
-            <div id="fixed_line">
-                <div id="logo"></div>
-                    <!--Bild von Hyperlinks trennen um gewünschte Anordnung zu erzielen-->
-                    <!--evtl mit Tabelle-->
-                    <!--<img src="ah_logo klein.jpg" alt="Logo">--> 
-                    <div id="willkommen"><a href="index.html" target="_self">Willkommen</a></div>  
-                    <div id="antrag"><a href="antrag.html" target="_self">Antrag</a></div>
-                    <div id="pflegehilfsmittel"><a href="pflegehilfsmittel.html" target="_self">Pflegehilfsmittel</a></div> 
-                    <div id="kontakt"><a href ="kontakt.html" target="_self">Kontakt</a></div>
-                    <!--links visited shouldn't change their color-->
+            <div id="container_navigation">
+                <div id="logo"><a href="index.html"><img src="ah_logo klein.jpg" alt="ah_logo klein"></a></div>
+                <div id="name">Sanikorb - Pflegemittel für Ihren Alltag</div>
+                <div id="navigation">
+                    <ul>
+                        <li><a href="index.html">Willkommen</a></li>
+                        <li><a href="antrag.html">Antrag</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="pflegehilfsmittel.html">Pflegehilfsmittel</a></li>
+                    </ul>
+                </div>
             </div>
             <hr /><!--line originäler gestalten-->
         </div>
         </header>
-        <section></section>
-        <footer></footer>
-        <h2>Ihr Antrag für Pflegehilfsmittel zum Verbrauch nach §40 SGB XI</h2>
+        <section>
+            <h2>Ihr Antrag für Pflegehilfsmittel zum Verbrauch nach §40 SGB XI</h2>
         <br>
         Füllen Sie hier den Antrag für Ihre Pflegekasse aus.<br>
         Um die Abwicklung kümmern wir uns für Sie!!
+        </section>
+        <footer>
+            <div    id="container_slbl">
+                <div    id="text_slbl"><a   href="kontakt.html">Kontakt</a> | <a  href="impressum.html">Impressum</a> | <a   href="datenschutz.html">Datenschutz</a></div>
+            </div>
+            <div id="container_lbl">
+                <div id="copyright_lbl">&#169 Copyright 2020 | B. Schiffner & T. Schweiger</div>
+            </div>
+        </footer>
     </body>
 </html>
